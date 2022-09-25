@@ -1,0 +1,10 @@
+{
+    "articles": [
+        { "title": "Pseudo news title 1" },
+        { "title": "Pseudo news title 2" },
+        { "title": "Pseudo news title 3" },
+        { "title": "Pseudo news title 4" },
+        { "title": "Pseudo news title 5" },
+        { "title": "Pseudo news title 6" }
+    ]
+}

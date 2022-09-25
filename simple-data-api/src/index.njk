@@ -1,0 +1,11 @@
+---
+title: Hello, data!
+layout: base.njk
+---
+<h1>Hello, data!</h1>
+
+<ul>
+    {% for article in news.articles %}
+    <li>{{ article.title }}</li>
+    {% endfor %}
+</ul>
