@@ -4,8 +4,14 @@ layout: base.njk
 ---
 <h1>Hello, data!</h1>
 
+<h2>Pseudo-data from local JSON file</h2>
 <ul>
     {% for article in news.articles %}
     <li>{{ article.title }}</li>
     {% endfor %}
 </ul>
+
+<h2>A random dog image from an API</h2>
+<p>
+    <img src="{{ doggy.message }}" alt="A random dog image" />
+</p>
