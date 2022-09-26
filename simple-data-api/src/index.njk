@@ -15,3 +15,10 @@ layout: base.njk
 <p>
     <img src="{{ doggy.message }}" alt="A random dog image" />
 </p>
+
+<h2>Top ten most recent "Star Wars" articles from an API</h2>
+<ul>
+    {% for article in starwars.articles %}
+    <li><a href="article.url">{{article.title}}</a></li>
+    {% endfor %}
+</ul>
