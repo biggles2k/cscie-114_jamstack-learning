@@ -1,0 +1,19 @@
+---
+title: Hello, localized data!
+layout: base.njk
+pagination:
+    data: headlinesByCountry
+    size: 1
+    alias: headlinesByCountry
+permalink: /{{ headlinesByCountry.country }}/index.html
+---
+<h1>Hello, localized news!</h1>
+
+<h2>Top ten headlines by country: "{{ headlinesByCountry.country }}"</h2>
+<ul>
+    {%- for article in headlinesByCountry.articles %}
+    <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+    {%- endfor %}
+</ul>
+
+<p><a href="/">Return to Main Page</a></p>

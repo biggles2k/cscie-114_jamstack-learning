@@ -6,9 +6,9 @@ layout: base.njk
 
 <h2>Pseudo-data from local JSON file</h2>
 <ul>
-    {% for article in news.articles %}
+    {%- for article in news.articles %}
     <li>{{ article.title }}</li>
-    {% endfor %}
+    {%- endfor %}
 </ul>
 
 <h2>A random dog image from an API</h2>
@@ -18,7 +18,14 @@ layout: base.njk
 
 <h2>Top ten most recent "Star Wars" articles from an API</h2>
 <ul>
-    {% for article in starwars.articles %}
+    {%- for article in starwars.articles %}
     <li><a href="{{ article.url }}">{{ article.title }}</a></li>
-    {% endfor %}
+    {%- endfor %}
+</ul>
+
+<h2>Top ten science headlines by country code</h2>
+<ul>
+    {%- for headline in headlinesByCountry %}
+    <li><a href="{{ headline.country }}/">{{ headline.country }}</a></li>
+    {%- endfor %}
 </ul>

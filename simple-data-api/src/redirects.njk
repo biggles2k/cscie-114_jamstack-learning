@@ -1,0 +1,7 @@
+---
+permalink: _redirects
+---
+{%- for headline in headlinesByCountry %}
+/   /{{ headline.country }}/index.html  200 Country={{ headline.country }}
+{%- endfor %}
+/   /index.html 200
