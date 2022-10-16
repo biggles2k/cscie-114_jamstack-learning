@@ -5,6 +5,7 @@ const options = {
   };
   
 function success(pos) {
+    const crd = pos.coords;
     const url = `/.netlify/functions/weatherapi?lat=${crd.latitude}&lon=${crd.longitude}&units=metric`
 
     console.log('Your current position is:');
